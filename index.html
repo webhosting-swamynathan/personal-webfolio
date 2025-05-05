@@ -91,7 +91,7 @@
       <h1 class="text-4xl font-bold text-gray-900 mb-5" style="margin-top: 50px;">
         Talk is Cheap Show me the Code
       </h1>
-      <p style="font-weight: bold;font-size: 20px;color: rgb(75, 75, 75);padding: 30px;" id="typewriter"> </p>
+      <p style="font-weight: bold;font-size: 20px;color: #555;" >Code. Create. Innovate. Inspire . . . </p>
       <p style="font-weight: bold; margin-top: 50px;" class="text-xl text-gray-600 max-w-2xl "
         style="margin-top: 70px;">
         Introduce :
@@ -677,13 +677,6 @@
         .then(() => alert("Code copied to clipboard!"))
         .catch((err) => console.error("Failed to copy code:", err));
     }
-    const text = "Code. Create. Innovate. Inspire . . . ";
-    let i = 0, dir = 1;
-    setInterval(() => {
-      i += dir;
-      if (i === text.length || i === 0) dir *= -1;
-      document.getElementById("typewriter").textContent = text.slice(0, i);
-    }, 200);
   </script>
 </body>
 
