@@ -91,7 +91,7 @@
       <h1 class="text-4xl font-bold text-gray-900 mb-5" style="margin-top: 50px;">
         Talk is Cheap Show me the Code
       </h1>
-      <p style="font-weight: bold;"> <i class="bi bi-pen"></i> Code. Create. Innovate. Inspire . . . <span>✒</span></p>
+      <p style="font-weight: bold;font-size: 20px;color: rgb(75, 75, 75);" id="typewriter"> </p>
       <p style="font-weight: bold; margin-top: 50px;" class="text-xl text-gray-600 max-w-2xl "
         style="margin-top: 70px;">
         Introduce :
@@ -416,8 +416,9 @@
               me </p>
             <p class="text-sm font-medium text-gray-600 my-5" style="font-weight: bolder;font-size: 17px;"> 📞 Phone :
               +91 6382034890</p>
-            <p class="text-sm font-medium text-gray-600" style="font-weight: bolder;font-size: 17px;"> 💌 Email : <br><br><a
-                href="mailto:swamynathan167@gmail.com">swamynathan167@gmail.com</a></p>
+            <p class="text-sm font-medium text-gray-600" style="font-weight: bolder;font-size: 17px;"> 💌 Email :
+              <br><br><a href="mailto:swamynathan167@gmail.com">swamynathan167@gmail.com</a>
+            </p>
             <h3 class="text-2xl font-bold text-gray-900" id="endpointCount">
 
             </h3>
@@ -676,9 +677,14 @@
         .then(() => alert("Code copied to clipboard!"))
         .catch((err) => console.error("Failed to copy code:", err));
     }
+    const text = "Code. Create. Innovate. Inspire . . . ✒";
+    let i = 0, dir = 1;
+    setInterval(() => {
+      i += dir;
+      if (i === text.length || i === 0) dir *= -1;
+      document.getElementById("typewriter").textContent = text.slice(0, i);
+    }, 200);
   </script>
-
-
 </body>
 
 </html>
