@@ -615,24 +615,24 @@
       }, 400); // Match the fade-out duration
     }
 
-    // function downloadResume() {
-    //   const link = document.createElement("a");
-    //   link.href = "swamy_resume (4)";
-    //   link.download = "SwamyNathan_Resume.pdf";
-    //   link.click();
-    // }
+    function downloadResume() {
+      const link = document.createElement("a");
+      link.href = "";
+      link.download = "SwamyNathan_Resume.pdf";
+      link.click();
+    }
     //     function downloadResume() {
     //   const link = document.createElement("a");
     //   link.href = "/files/swamy_resume (4).pdf"; // Assuming the file is in a 'files' directory on your server
     //   link.download = "SwamyNathan_Resume.pdf";
     //   link.click();
     // }
-    function downloadResume() {
-      const link = document.createElement("a");
-      link.href = "file:///C:/Users/swamy/OneDrive/Desktop/webfolios/swamy_resume%20(4).pdf"; // Local path with file://
-      link.download = "SwamyNathan_Resume.pdf"; // Name the file when downloading
-      link.click();
-    }
+    // function downloadResume() {
+    //   const link = document.createElement("a");
+    //   link.href = "file:///C:/Users/swamy/OneDrive/Desktop/webfolios/swamy_resume%20(4).pdf"; // Local path with file://
+    //   link.download = "SwamyNathan_Resume.pdf"; // Name the file when downloading
+    //   link.click();
+    // }
 
     window.onclick = function (e) {
       if (e.target === modal) {
